@@ -24,7 +24,11 @@ class App extends Component {
       <div className="App">
 
         <div className="App-title">{this.state.deadline}</div>
-      <Clock />
+
+      <Clock
+        deadline={this.state.deadline} //You declare the child component within the parent, and then add the data you want to pass to it as 'props'
+      />
+
         <div>
           <input
             placeholder='new date'
